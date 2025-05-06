@@ -14,11 +14,11 @@ class DetalhesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detalhes)
 
         // Serializable não é mais recomendado no Android
-        // A opção é usar Parcelable
+        // A opção melhor é usar Parcelable
         val serie = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
             intent.getParcelableExtra("serie", Serie::class.java)
         } else {
-            // Versão mais antiga
+            // Versão mais antiga do Android
             @Suppress("DEPRECATION")
             intent.getParcelableExtra("serie") as? Serie
         }
