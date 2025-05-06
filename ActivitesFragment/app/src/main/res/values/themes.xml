@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ActivitesFragment" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cor de fundo da activity -->
+        <item name="android:colorBackground">@color/black</item>
+
+        <!-- Cor primária -->
+        <item name="colorPrimary">@color/netflix_red</item>
+
+        <!-- Cor usada para botões, ícones etc. -->
+        <item name="colorPrimaryVariant">@color/netflix_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Cor de superfície (cards, dialog) -->
+        <item name="colorSurface">@color/black</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Cor do texto em fundo escuro -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.ActivitesFragment" parent="Base.Theme.ActivitesFragment" />
+</resources>

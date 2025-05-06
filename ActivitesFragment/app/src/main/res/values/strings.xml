@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ActivitesFragment</string>
+
+    <!-- Strings para Tela de Login -->
+    <string name="netflix_logo">NETFLIX</string>
+    <string name="email_celular">Email ou número de celular</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+
+    <!-- Strings para o banner One Piece -->
+    <string name="one_piece">One Piece</string>
+    <string name="descricao_banner_principal">Monkey D. Luffy parte em busca do maior tesouro do mundo: o One Piece.</string>
+    <string name="mais_informacoes">Mais informações</string>
+
+    <!-- Outras séries -->
+    <string name="outras_series">Outras Séries</string>
+    <string name="breaking">Breaking Bad</string>
+    <string name="brooklyn">Brooklyn Nine-Nine</string>
+    <string name="house">House</string>
+    <string name="office">The Office</string>
+    <string name="logo_netflix">Logo da Netflix\n\n</string>
+</resources>

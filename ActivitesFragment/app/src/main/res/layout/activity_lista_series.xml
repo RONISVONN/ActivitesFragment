@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#111111"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Banner principal One Piece -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/bannerOnePiece"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="TODO"
+                android:scaleType="centerCrop"
+                android:src="@drawable/one_piece" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#80000000">
+
+                <TextView
+                    android:text="@string/one_piece"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@string/descricao_banner_principal"
+                    android:textColor="#DDDDDD"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Botão e texto alinhados horizontalmente -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMaisInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:text="@string/mais_informacoes"
+                        app:icon="@android:drawable/ic_dialog_info"
+                        app:iconPadding="8dp"
+                        app:iconTint="@color/white"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#444444"
+                        android:padding="8dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Título de seção -->
+        <TextView
+            android:text="@string/outras_series"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Grade com 4 séries -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <ImageView
+                android:id="@+id/imgBreakingBad"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="@string/breaking"
+                android:scaleType="centerCrop"
+                android:src="@drawable/breaking" />
+
+            <ImageView
+                android:id="@+id/imgBrooklyn"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="@string/brooklyn"
+                android:scaleType="centerCrop"
+                android:src="@drawable/brooklyn" />
+
+            <ImageView
+                android:id="@+id/imgHouse"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="@string/house"
+                android:scaleType="centerCrop"
+                android:src="@drawable/house" />
+
+            <ImageView
+                android:id="@+id/imgOffice"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:contentDescription="@string/office"
+                android:scaleType="centerCrop"
+                android:src="@drawable/office" />
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

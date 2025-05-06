@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo Netflix -->
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo_netflix"
+        android:src="@drawable/logo_netflix"
+        android:layout_gravity="start"
+        app:tint="#E50914" />
+
+    <!-- Título -->
+    <TextView
+        android:text="@string/entrar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start" />
+
+    <!-- Campo Email -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/email_celular"
+        android:textColorHint="#BBBBBB"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#BBBBBB"
+        android:inputType="textEmailAddress" />
+
+    <!-- Campo Senha -->
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/senha"
+        android:textColorHint="#BBBBBB"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#BBBBBB"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão Entrar -->
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entrar"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E50914"
+        android:layout_marginTop="24dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Login: ronisvonn@gmail.com"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha: 12345678"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
