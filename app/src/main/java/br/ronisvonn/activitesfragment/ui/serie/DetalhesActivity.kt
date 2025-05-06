@@ -13,7 +13,15 @@ class DetalhesActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_detalhes)
 
-        val serie = intent.getParcelableExtra<Serie>("serie")
+        // Serializable não é mais recomendado no Android
+        // A opção é usar Parcelable
+        val serie = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+            intent.getParcelableExtra("serie", Serie::class.java)
+        } else {
+            // Versão mais antiga
+            @Suppress("DEPRECATION")
+            intent.getParcelableExtra("serie") as? Serie
+        }
 
         serie?.let {
             findViewById<ImageView>(R.id.imgSerieDetalhe).setImageResource(it.imagemResId)
